@@ -1,0 +1,29 @@
+body {
+	overflow-x: hidden;
+}
+.nopadding { padding: 0; }
+.nomargin { margin: 0; }
+.noborder {
+	border: none;
+	background: none;
+}
+#header { padding-top: 20px; }
+#header address {
+	margin: 0;
+	line-height: 34px;
+}
+.top-bar {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 7px;
+}
+.logo {
+	display: block;
+}
+.logo a, .logo a img { display: block; }
+.add-to {
+	margin: 6px 0 0 8px;
+	float: left;
+}
+.add-to .fa.fa-calendar { color: #fff; }
+.navbar-nav { float: right; }
