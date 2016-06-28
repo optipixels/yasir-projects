@@ -1,10 +1,4 @@
-/**
- * AddToCalendar Blue Style
- * http://addtocalendar.com
- */
-
 /* Base */
-
 .addtocalendar var{
     display: none;
 }
@@ -61,18 +55,21 @@
 .atc-style-blue .atcb-link:active,
 .atc-style-blue .atcb-link:focus {
     margin: 0;
-    padding: 7px 38px;
+    padding: 5px 18px 5px 52px;
     color: #fff;
-    font-family: "Verdana";
-    font-size: 12px;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
     text-decoration: none;
     outline: none;
-    line-height: 20px;
+    line-height: 25px;
     vertical-align: middle;
-    background-color: green;
+    background-color: #93c524;
     box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
-    border-radius: 4px;
+    border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
     zoom: 1;
+	text-transform: uppercase;
 }
 
 .atc-style-blue .atcb-list {
@@ -83,8 +80,7 @@
 }
 
 .atc-style-blue .atcb-list,
-.atc-style-blue .atcb-item
-{
+.atc-style-blue .atcb-item {
     background: #fff;
     color: #000;
 }

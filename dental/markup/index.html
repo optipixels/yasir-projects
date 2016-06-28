@@ -9,6 +9,7 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/all.css" media="all">
+	<!-- link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100,100italic,700italic' rel='stylesheet' type='text/css' -->
 </head>
 <body>
 <div class="row">
@@ -20,17 +21,16 @@
 						<div class="top-bar clearfix">
 							<div class="col-sm-8 nopadding">
 								<address>
-									<span class="col-md-3 nopadding slideInLeft"><i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span class="col-md-4 nopadding animated slideInLeft"><i class="fa fa-map-marker" aria-hidden="true"></i>
 123 Bella Street, France</span>
-									<a href="tel:00123456789" class="col-md-3 slideInLeft"><i class="fa fa-phone" aria-hidden="true"></i>
+									<a href="tel:00123456789" class="col-md-4 tel animated slideInLeft"><i class="fa fa-phone" aria-hidden="true"></i>
 +(00) 123 456 789</a>
-									<a class="col-md-3 slideInLeft" href="mailto:office@galliasoft.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-office@galliasoft.com</a>
+									<a class="col-md-4 animated slideInLeft" href="mailto:office@galliasoft.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>office@galliasoft.com</a>
 								</address>
 							</div>
 							<div class="col-sm-4 nopadding">
 								<!-- 3. Place event data -->
-								<span class="addtocalendar atc-style-blue pull-right">
+								<span class="addtocalendar animated slideInRight atc-style-blue pull-right">
 									<span class="add-to"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 									<var class="atc_event">
 										<var class="atc_date_start">2016-05-04 12:00:00</var>
@@ -49,38 +49,26 @@ office@galliasoft.com</a>
 				</div>
 				<div class="row">
 					<div class="col-sm-2 pull-left">
-						<div class="logo"><a href="#"><img src="images/logo-prident.png" width="184" height="44" alt="Prident"></a></div>
+						<div class="logo animated fadeIn"><a href="#"><img src="images/logo-prident.png" width="184" height="44" alt="Prident"></a></div>
 					</div>
-					<div class="col-sm-8 pull-right">
-						<nav class="navbar navbar-default noborder">
-							<div class="container-fluid"> 
-								<!-- Menu and toggle get grouped for better mobile display -->
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-									<!-- a class="navbar-brand hidden-md" href="#">Menu</a -->
-								</div>
-								<!-- Collect the nav links, forms, and other content for toggling -->
-								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-										<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-										<li><a href="#">Link</a></li>
-										<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-											<ul class="dropdown-menu">
-												<li><a href="#">Action</a></li>
-												<li><a href="#">Another action</a></li>
-												<li><a href="#">Something else here</a></li>
-												<li role="separator" class="divider"></li>
-												<li><a href="#">Separated link</a></li>
-												<li role="separator" class="divider"></li>
-												<li><a href="#">One more separated link</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-								<!-- /.navbar-collapse --> 
-							</div>
-							<!-- /.container-fluid --> 
-						</nav>
+					<div class="col-sm-10 pull-right">
+						<div id="mobile-header">
+							<a id="responsive-menu-button" href="#sidr-main">Menu</a>
+						</div>
+						<div id="navigation">
+							<nav class="nav">
+								<ul>
+									<li><a href="#download">Home</a></li>
+									<li><a href="#getstarted">About Us</a></li>
+									<li><a href="#usage">Services</a></li>
+									<li><a href="#documentation">Doctors</a></li>
+									<li><a href="#themes">Gallery</a></li>
+									<li><a href="#support">Prices</a></li>
+									<li><a href="#support">Blog</a></li>
+									<li><a href="#support">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -90,7 +78,41 @@ office@galliasoft.com</a>
 				<img src="images/img-1.jpg" alt="image-banner-1">
 				<div class="banner-container">
 					<div class="banner-block">
-						<h1>Your Health Our Commitment to your Smile</h1>
+						<span class="title"><span>Your Health</span> Our Commitment <span class="last">to your Smile</span></span>
+					</div>
+				</div>
+				<div class="bottom-banner">	
+					<div class="services-block">
+						<ul>
+							<li>
+								<span class="default-services"><a href="#">dental braces</a></span>
+								<span class="hover-services">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing ...</p>
+									<button class="default">Read More</button>
+								</span>
+							</li>
+							<li>
+								<span class="default-services"><a href="#">dental braces</a></span>
+								<span class="hover-services">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing ...</p>
+									<button class="default">Read More</button>
+								</span>
+							</li>
+							<li>
+								<span class="default-services"><a href="#">dental braces</a></span>
+								<span class="hover-services">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing ...</p>
+									<button class="default">Read More</button>
+								</span>
+							</li>
+							<li>
+								<span class="default-services"><a href="#">dental braces</a></span>
+								<span class="hover-services">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing ...</p>
+									<button class="default">Read More</button>
+								</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -99,21 +121,41 @@ office@galliasoft.com</a>
 		<main id="main" role="main"> </main>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script>
-     $(document).ready(function(){
-        $('.dropdown-toggle').dropdown()
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.sidr.js"></script>
+	<script>
+		$('#responsive-menu-button').sidr({
+		  name: 'sidr-main',
+		  source: '#navigation'
+		});
+	</script>
+	
+	<!-- Your code -->
+    <script>
+
+    $(document).ready(function () {
+      $('#simple-menu').sidr({
+        timing: 'ease-in-out',
+        speed: 500
+      });
     });
-</script>
-<!-- 2. Include script -->
-<script type="text/javascript">(function () {
-		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-			var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-			s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-			s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-			var h = d[g]('body')[0];h.appendChild(s); }})();
-</script>
+
+    $( window ).resize(function () {
+      $.sidr('close', 'sidr');
+    });
+
+    </script>
+	
+	
+	<!-- 2. Include script -->
+	<script type="text/javascript">(function () {
+			if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+			if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+				var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+				s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+				var h = d[g]('body')[0];h.appendChild(s); }})();
+	</script>
 </body>
 </html>
