@@ -1,3 +1,6 @@
+/******* Google Font "Robot" embeded **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700);
+/******* Google Font ended **********/
 body {
 	overflow-x: hidden;
 	color: #3a3a3a;
@@ -5,6 +8,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 a { color: #3a3a3a; }
+h1 { margin: 0; }
 .nopadding { padding: 0; }
 .nomargin { margin: 0; }
 .noborder {
@@ -78,7 +82,6 @@ a { color: #3a3a3a; }
   font-size: 15px;
   background: #333;
   color: #fff;
-  box-shadow: 0 0 5px 5px #222 inset;
 }
 .sidr .sidr-inner {
   padding: 0 0 15px;
@@ -229,7 +232,11 @@ a { color: #3a3a3a; }
 .sidr input[type=submit]:hover {
   background: rgba(255, 255, 255, 0.9);
 }
-.banner-area { position: relativee;}
+.banner-area {
+	position: relativee;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.26);
+	box-shadow: 0 6px 6px rgba(0,0,0,0.26);
+}
 .banner-container {
     position: absolute;
     width: 100%;
@@ -290,7 +297,6 @@ a { color: #3a3a3a; }
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	background: #cee021; 
-	
 }
 .services-block ul li:hover {
 	height: 100px;
@@ -301,10 +307,27 @@ a { color: #3a3a3a; }
 	display: block;
 	padding: 10px 20px;
 }
-.services-block ul li:hover .hover-services {
-	display: block;
-}
+.services-block ul li:hover .hover-services { display: block; }
 .hover-services { display: none; } 
+/**** Support area ****/
+.support-area {
+	background: url(../images/img-3.jpg) no-repeat;
+	max-width: 100%;
+	height: auto;
+}
+/*** Services Area ***/
+.services-area { background: url(../images/img-4.png) no-repeat 100% 100% / 35% auto; }
+.title-info {
+	display: block;
+	text-align: center;
+}
+.title-content { display: block; }
+.img-testimonial {
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+}
 @media only screen and (max-width: 1024px){
 	.tel:hover { cursor: pointer; }
 }
