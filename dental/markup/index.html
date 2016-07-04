@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="css/atc-style-blue.css" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/all.css" media="all">
 </head>
 <body>
@@ -20,16 +19,16 @@
 						<div class="top-bar clearfix">
 							<div class="col-sm-8 nopadding">
 								<address>
-									<span class="col-md-4 nopadding animated slideInLeft"><i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span class="col-md-3 nopadding"><i class="fa fa-map-marker" aria-hidden="true"></i>
 123 Bella Street, France</span>
-									<a href="tel:00123456789" class="col-md-4 tel animated slideInLeft"><i class="fa fa-phone" aria-hidden="true"></i>
+									<a href="tel:00123456789" class="col-md-3 tel"><i class="fa fa-phone" aria-hidden="true"></i>
 +(00) 123 456 789</a>
-									<a class="col-md-4 animated slideInLeft" href="mailto:office@galliasoft.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>office@galliasoft.com</a>
+									<a class="col-md-6" href="mailto:office@galliasoft.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>office@galliasoft.com</a>
 								</address>
 							</div>
 							<div class="col-sm-4 nopadding">
 								<!-- 3. Place event data -->
-								<span class="addtocalendar animated slideInRight atc-style-blue pull-right">
+								<span class="addtocalendar atc-style-blue pull-right">
 									<span class="add-to"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 									<var class="atc_event">
 										<var class="atc_date_start">2016-05-04 12:00:00</var>
@@ -48,7 +47,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-2 pull-left">
-						<div class="logo animated fadeIn"><a href="#"><img src="images/logo-prident.png" width="184" height="44" alt="Prident"></a></div>
+						<div class="logo"><a href="#"><img src="images/logo-prident.png" width="184" height="44" alt="Prident"></a></div>
 					</div>
 					<div class="col-sm-10 pull-right">
 						<div id="mobile-header">
@@ -57,14 +56,58 @@
 						<div id="navigation">
 							<nav class="nav">
 								<ul>
-									<li><a href="#download">Home</a></li>
+									<li class="active"><a href="index.html">Home</a>
+										<ul>
+											<li><a href="index.html">Home</a>
+												<ul>
+													<li><a href="index.html">Home</a></li>
+													<li><a href="#getstarted">About Us</a></li>
+													<li><a href="#usage">Services</a></li>
+													<li><a href="#documentation">Doctors</a></li>
+													<li><a href="#themes">Gallery</a></li>
+													<li><a href="#support">Prices</a></li>
+													<li><a href="#support">Blog</a></li>
+													<li><a href="#support">Contact</a></li>
+												</ul>
+											</li>
+											<li><a href="#getstarted">About Us</a></li>
+											<li><a href="#usage">Services</a></li>
+											<li><a href="#documentation">Doctors</a></li>
+											<li><a href="#themes">Gallery</a></li>
+											<li><a href="#support">Prices</a></li>
+											<li><a href="#support">Blog</a></li>
+											<li><a href="#support">Contact</a></li>
+										</ul>
+									</li>
 									<li><a href="#getstarted">About Us</a></li>
 									<li><a href="#usage">Services</a></li>
 									<li><a href="#documentation">Doctors</a></li>
 									<li><a href="#themes">Gallery</a></li>
 									<li><a href="#support">Prices</a></li>
 									<li><a href="#support">Blog</a></li>
-									<li><a href="#support">Contact</a></li>
+									<li><a href="#support">Contact</a>
+										<ul>
+											<li><a href="index.html">Home</a>
+												<ul>
+													<li><a href="index.html">Home</a></li>
+													<li><a href="#getstarted">About Us</a></li>
+													<li><a href="#usage">Services</a></li>
+													<li><a href="#documentation">Doctors</a></li>
+													<li><a href="#themes">Gallery</a></li>
+													<li><a href="#support">Prices</a></li>
+													<li><a href="#support">Blog</a></li>
+													<li><a href="#support">Contact</a></li>
+												</ul>
+											</li>
+											<li><a href="#getstarted">About Us</a></li>
+											<li><a href="#usage">Services</a></li>
+											<li><a href="#documentation">Doctors</a></li>
+											<li><a href="#themes">Gallery</a></li>
+											<li><a href="#support">Prices</a></li>
+											<li><a href="#support">Blog</a></li>
+											<li><a href="#support">Contact</a></li>
+										</ul>
+									</li>
 								</ul>
 							</nav>
 						</div>
@@ -82,7 +125,7 @@
 				</div>
 				<div class="bottom-banner">	
 					<div class="services-block">
-						<ul>
+						<ul class="clearfix">
 							<li>
 								<span class="default-services"><a href="#">dental braces</a></span>
 								<span class="hover-services">
@@ -116,7 +159,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="row">
+		<div class="row about-us">
 			<div class="container">
 				<div class="col-sm-6">
 					<img src="images/img-2.jpg" alt="image-about">
@@ -142,10 +185,10 @@
 							</div>
 							<div class="col-sm-12">
 								<div class="col-xs-6 col-md-6 form-group">
-									<input class="form-control" id="first" name="first" placeholder="*First Name" type="text" required autofocus />
+									<input class="form-control" id="first" name="first" placeholder="*First Name" type="text" required />
 								</div>
 								<div class="col-xs-6 col-md-6 form-group">
-									<input class="form-control" id="last" name="last" placeholder="*Last Name" type="text" required autofocus />
+									<input class="form-control" id="last" name="last" placeholder="*Last Name" type="text" required />
 								</div>
 							</div>
 							<div class="col-sm-12">
@@ -276,6 +319,111 @@
 				
 			</section>
 		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.2464230570913!2d-81.28777868538724!3d29.009693673662234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e71ba52f54413b%3A0x47ab829aa109e97c!2s123+Casa+Bella+Blvd%2C+DeLand%2C+FL+32724!5e0!3m2!1sen!2s!4v1467316337044" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 subscribe-area">
+				<section class="container">
+					<div class="col-sm-6 col-xs-12">
+						<h1>Subscribe to Newsletter</h1>
+						<h2>Receives news of dentistry from our experts</h2>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<form id="Signup" method="post" class="form" role="form">
+							<div class="col-xs-6 col-md-6 form-group">
+								<input class="form-control" id="email1" name="email1" placeholder="*Email" type="email" required />
+							</div>
+							<div class="col-xs-12 col-md-6 form-group">
+								<button class="btn btn-primary" name="signup" type="submit">Signup</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="row">
+			<div class="col-sm-12 footer-area">
+				<img src="images/bg-footer.jpg" class="footer-img" alt="footer bg">
+				<section class="container">
+					<div class="col-sm-6 col-xs-12">
+						<div class="logo"><a href="#"><img src="images/logo-footer.png" width="185" height="44" alt="Prident"></a></div>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+					</div>
+					<div class="col-sm-2 col-xs-12">
+						<h2>Opening hours</h2>
+						<dl>
+							<dt>Monday - Friday :</dt>
+							<dd> 09:00 am - 18:00 pm</dd>
+							<dt>Saturday :</dt>
+							<dd> 10:00 am - 14:00 pm</dd>
+							<dt>Sunday :</dt>
+							<dd> Closed</dd>
+						</dl>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Recent Tweets</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<span class="text-hours">3 hours ago</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Recent Tweets</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<span class="text-hours">3 hours ago</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<section class="col-sm-12 instagram-area">
+							<h1>Instagram</h1>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-12.jpg" alt="image description">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-13.jpg" alt="image description">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-14.jpg" alt="image description">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-15.jpg" alt="image description">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-16.jpg" alt="image description">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-12">
+								<img src="images/img-17.jpg" alt="image description">
+							</div>							
+						</section>
+					</div>
+				</section>
+				<div class="row">
+					<div class="col-sm-12 social-area">
+						<div class="container">
+							<div class="col-sm-6 col-xs-12 nopadding">
+								<p>&copy; Prident. All rights reserved. Design by GalliaSoft</p>
+							</div>
+							<div class="col-sm-6 col-xs-12 nopadding">
+								<div class="col-md-12">
+								<ul class="social-network social-circle">
+									<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+									<li><a href="#" class="icoSkype" title="Skype"><i class="fa fa-skype"></i></a></li>
+									<li><a href="#" class="icodribbble" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+								</ul>				
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 </div>
 	<script src="js/jquery.min.js"></script>
@@ -287,10 +435,8 @@
 		  source: '#navigation'
 		});
 	</script>
-	
 	<!-- Your code -->
     <script>
-
     $(document).ready(function () {
       $('#simple-menu').sidr({
         timing: 'ease-in-out',
@@ -303,16 +449,14 @@
     });
 
     </script>
-	
-	
 	<!-- 2. Include script -->
 	<script type="text/javascript">(function () {
-			if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-			if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-				var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-				s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-				s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-				var h = d[g]('body')[0];h.appendChild(s); }})();
+		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+			var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+			s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+			s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+			var h = d[g]('body')[0];h.appendChild(s); }})();
 	</script>
 </body>
 </html>

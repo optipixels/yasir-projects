@@ -15,9 +15,13 @@ h1 { margin: 0; }
 	border: none;
 	background: none;
 }
+#gmap_canvas img {
+	max-width: none !important;
+	background: none !important;
+}	
 #header { padding-top: 10px; }
 #header address {
-	margin: 0;
+	margin-top: 1px;
 	line-height: 34px;
 }
 .fa-map-marker:before,
@@ -56,17 +60,77 @@ h1 { margin: 0; }
 }
 #mobile-header { display: none; }
 .nav ul { text-align: right; }
-.nav ul li {
-    margin: 0 0 0 34px;
+.nav ul > li {
+    margin: 0 0 0 14px;
     list-style: none;
     display: inline-block;
     vertical-align: top;
+	position: relative;
 }
-.nav ul li a {
+.nav ul > li > a {
 	color: #3a3a3a;
 	font-size: 14px;
 	line-height: 56px;
+	padding: 4px 8px;
 	text-transform: uppercase;
+}
+.nav ul > li.active > a,
+.nav ul > li:hover > a {
+	background: #93c524;
+	padding: 4px 8px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color: #fff;
+	text-decoration: none;
+}
+.nav ul > li:hover > ul { display: block; }
+.nav ul > li > ul {
+	display: none;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	width: 200px;
+	z-index: 1;
+	padding-left: 0;
+	background: #3a3a3a;
+	text-align: left;
+}
+.nav ul > li:last-child:hover > ul {
+	left: auto;
+	right: 0;
+} 
+.nav ul > li:last-child:hover > ul > li > ul {
+	left: auto;
+	right: 100%;
+} 
+.nav ul > li > ul > li { position: relative; }
+.nav ul > li > ul > li:hover ul { display: block; }
+.nav ul > li > ul > li > ul {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 100%;
+	width: 200px;
+	z-index: 1;
+	padding-left: 0;
+	background: #3a3a3a;
+	text-align: left;
+	
+}
+.nav ul > li > ul > li > ul li,
+.nav ul li > ul li {
+	margin: 0;
+	display: block;
+	padding: 5px 0;
+}
+.nav ul li > ul > li a {
+	line-height: 20px;
+	color: #fff;
+}
+.nav ul li > ul > li:hover { 
+	background: #93c524;
+	transition: ease-in 1s; 
+	-webkit-transition: ease-in 1s;
 }
 /***************************************************/
 .sidr {
@@ -168,10 +232,10 @@ h1 { margin: 0; }
   line-height: 40px;
   font-size: 13px;
 }
-.sidr ul li ul li:last-child {
-  border-bottom: 0;
-}
-.sidr ul li ul li:hover, .sidr ul li ul li.active, .sidr ul li ul li.sidr-class-active {
+.sidr ul li ul li:last-child { border-bottom: 0; }
+.sidr ul li ul li:hover,
+.sidr ul li ul li.active,
+.sidr ul li ul li.sidr-class-active {
   border-top: 0;
   line-height: 41px;
 }
@@ -234,8 +298,9 @@ h1 { margin: 0; }
 }
 .banner-area {
 	position: relativee;
-	-webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.26);
-	box-shadow: 0 6px 6px rgba(0,0,0,0.26);
+	overflow: hidden;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.26);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.26);
 }
 .banner-container {
     position: absolute;
@@ -245,7 +310,7 @@ h1 { margin: 0; }
 }
 .banner-block {
 	max-width: 1173px;
-	margin: 108px auto 0;
+	margin: 106px auto 0;
 	overflow: hidden;
 	text-align: right;
 }
@@ -276,7 +341,7 @@ h1 { margin: 0; }
 	position: absolute;
 	top: 100%;
 	left: 0;
-	margin: -76px 0 0;
+	margin: -40px 0 0;
 	width: 100%;
 }
 .services-block ul {
@@ -284,31 +349,44 @@ h1 { margin: 0; }
 	padding: 0;
 	list-style: none;
 	max-width: 1173px;
-	overflow: hidden;
 }
 .services-block ul li {
+	color: #fff;
 	display: inline-block;
 	vertical-align: top;
-	width: 23%;
-	height: 40px;
-	-webkit-transition: height 2s, top .15s ease-in-out; /* For Safari 3.1 to 6.0 */
-    transition: height 2s;
+	width: 24.7%;
+	padding: 10px;
 	border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	background: #cee021; 
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 .services-block ul li:hover {
-	height: 100px;
-	background: #f20;
-    transition: height 2s;
+	-webkit-transform: translateY(-76px);
+	transform: translateY(-76px);
 }
-.default-services {
-	display: block;
-	padding: 10px 20px;
+.default-services { display: block; }
+.default-services a {
+	text-transform: uppercase;
+	color: #fff;
 }
 .services-block ul li:hover .hover-services { display: block; }
 .hover-services { display: none; } 
+/**** About Us area ****/
+.about-us { padding-top: 50px; }
+/**** About Us area ended ****/
+
 /**** Support area ****/
 .support-area {
 	background: url(../images/img-3.jpg) no-repeat;
@@ -327,6 +405,98 @@ h1 { margin: 0; }
 	-webkit-border-radius: 100%;
 	display: block;
 	margin: 0 auto;
+}
+.subscribe-area {
+	background: #0f77ad url(../images/bg-news.jpg);
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+.footer-area {
+	position: relative;
+	padding: 0 0 65px;
+	background: #222d34;
+	color: #fff;
+}
+.footer-img {
+	width: 1920px;
+	height: 650px;
+	left: 50%;
+	margin: 0 0 0 -50%;
+	position: absolute;
+	display: block;
+}
+.instagram-area { padding-top: 50px; }
+.instagram-area h1 {
+	text-align: center;
+	font-size: ;
+	color: #fff;
+}
+.social-area {
+	background: #0f77ad;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+/*=========================
+  Icons
+ ================= */
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.icoRss:hover { background-color: #fff;}
+.social-network a.icoFacebook:hover {background-color:#fff;}
+.social-network a.icoTwitter:hover {background-color:#fff;}
+.social-network a.icoGoogle:hover {background-color:#fff;}
+.social-network a.icoDribbble:hover {background-color:#fff;}
+.social-network a.icoSkype:hover {background-color:#007bb7;}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {color:#44BCDD;}
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
 }
 @media only screen and (max-width: 1024px){
 	.tel:hover { cursor: pointer; }
